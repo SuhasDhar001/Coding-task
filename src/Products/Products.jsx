@@ -3,7 +3,7 @@ import React from 'react'
 const Products = ({product}) => {
     return (
         <div className='card-container'>
-          <img src={product.image || "/placeholder.svg"} alt={product.title} className="w-full h-48 object-cover" />
+          <img src={product.image} alt={product.title} className="w-full h-48 object-cover" />
           <div className="card-content">
             <h2>{product.title}</h2>
             <p>${product.price.toFixed(2)}</p>
